@@ -1,8 +1,11 @@
 
 export default function Condicional(){
 
+    let myBool = true
+    let content = myBool ? 'Soy un P con p de pollo' : ''
+
     return(
 
-        <p>Soy un P con p de puto</p>
+        <p>{content}</p>
     )
 }

@@ -1,14 +1,23 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Header from './header.js'
-import Condicional from './condicional';
+import Condicional from './condicional'
+import Arreglos from './arreglos'
+import Hooks from './hooks';
 
 export default function Home() {
   return (
     <div>
       
       <Header />
-      <Condicional />
+      {/* <Condicional /> */}
+
+      <div className='centerDiv'>
+        <Hooks />
+
+      </div>
+
+
 
       <style jsx global>{`
         html,
@@ -21,6 +30,12 @@ export default function Home() {
         }
         * {
           box-sizing: border-box;
+        }
+        .centerDiv{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 2rem;
         }
       `}</style>
     </div>
