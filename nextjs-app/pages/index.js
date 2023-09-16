@@ -4,6 +4,8 @@ import Header from './header.js'
 import Condicional from './condicional'
 import Arreglos from './arreglos'
 import Hooks from './hooks';
+import Answer from './answer';
+import UsingRef from './ref';
 
 export default function Home() {
   return (
@@ -13,8 +15,9 @@ export default function Home() {
       {/* <Condicional /> */}
 
       <div className='centerDiv'>
-        <Hooks />
-
+        {/* <Hooks /> */}
+        {/* <Answer /> */}
+        <UsingRef />
       </div>
 
 
